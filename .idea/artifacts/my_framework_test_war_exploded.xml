@@ -44,6 +44,11 @@
           <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.9.0" />
           <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.13.0" />
           <element id="library" level="project" name="Maven: org.glassfish.web:jstl-impl:1.2" />
+          <element id="library" level="project" name="Maven: com.aries:client:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.aries:commons:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.aries:register-client:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.0.24.Final" />
+          <element id="library" level="project" name="Maven: com.aries:domain-test:1.0-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.20" />
         </element>
       </element>
