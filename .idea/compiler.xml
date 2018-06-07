@@ -9,8 +9,5 @@
         <module name="my_framework_test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="my_framework_test" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

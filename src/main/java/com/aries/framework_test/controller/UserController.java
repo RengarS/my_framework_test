@@ -11,16 +11,38 @@ import java.util.List;
 
 @Controller
 public class UserController {
+
     @Autowired
     private UserService userService;
 
     @RequestMapping(value = "/index")
     public String index(Model model) {
-
         model.addAttribute("welcome", "hello world");
-
         return "index";
     }
+    @RequestMapping(value = "/test/json", method = RequestMethod.POST)
+    public void jsonParamTest(@RequestBody UserDO userDO) {
+        System.out.println("用户id：" + userDO.getId()
+                + "    " + "用户年龄：" + userDO.getAge() + "   "
+                + "用户名字：" + userDO.getName());
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @RequestMapping("/a/b")
     @ResponseBody
@@ -30,10 +52,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/test/json", method = RequestMethod.POST)
-    public void jsonParamTest(@RequestBody UserDO userDO) {
-        System.out.println("用户id：" + userDO.getId() + "    " + "用户年龄：" + userDO.getAge() + "   " + "用户名字：" + userDO.getName());
-    }
+
 
     @RequestMapping(value = "/test/get")
     public void getParamTest(@RequestParam("id") String id, @RequestParam("name") String name) {

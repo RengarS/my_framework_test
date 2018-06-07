@@ -26,6 +26,10 @@ public class UserService {
         return userDAO.list();
     }
 
+    /**
+     * 将rpc客户端注入进容器
+     * @return
+     */
     @Bean
     public AriesRpc ariesRpc() {
         return new AriesRpc("127.0.0.1", 9999, true);
